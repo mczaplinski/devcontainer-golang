@@ -1,0 +1,30 @@
+{
+    "name": "go-vscode-dev",
+    // "dockerComposeFile": ["docker-compose.yml"],
+    "service": "vscode",
+    "runServices": ["vscode"],
+    "shutdownAction": "stopCompose",
+    // "postCreateCommand": "~/start.sh",
+    "workspaceFolder": "/workspace",
+    // "overrideCommand": "",
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "waderyan.gitblame",
+        "donjayamanne.git-extension-pack",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "GitHub.copilot",
+        "GitHub.copilot-labs",
+        "golang.go",
+        "oderwat.indent-rainbow",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "DavidAnson.vscode-markdownlint",
+        "zxh404.vscode-proto3",
+        "redhat.vscode-yaml",
+        "Gruntfuggly.todo-tree",
+        "mfuentesg.vscode-protolint"
+    ],
+    "settings": {
+        "files.eol": "\n"
+    }
+}

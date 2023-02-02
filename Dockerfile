@@ -72,5 +72,11 @@ ENV GOPRIVATE=github.com
 # Install golangci-lint
 # TODO
 
+# Install docker, docker-compose, dive, kubectl, etc.
+# TODO
+
+# Mount docker socket
+# TODO
+
 
 ENTRYPOINT [ "/bin/zsh" ]
