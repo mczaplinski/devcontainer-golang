@@ -66,11 +66,18 @@ ENV PATH $PATH:/usr/local/go/bin
 # set GOPRIVATE to avoid proxying for private repositories
 ENV GOPRIVATE=github.com
 
-# Install go tools
-# TODO:
+# Install go tools and golangci-lint
+RUN go install -v \
+    golang.org/x/tools/gopls@latest \
+    github.com/cweill/gotests/...@latest \
+    github.com/fatih/gomodifytags@latest \
+    github.com/josharian/impl@latest \
+    github.com/haya14busa/goplay/cmd/goplay@latest \
+    github.com/go-delve/delve/cmd/dlv@latest \
+    honnef.co/go/tools/cmd/staticcheck@latest
 
 # Install golangci-lint
-# TODO
+RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.51.1
 
 # Install docker, docker-compose, dive, kubectl, etc.
 # TODO

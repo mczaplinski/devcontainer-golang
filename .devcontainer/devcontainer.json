@@ -2,10 +2,12 @@
     "name": "go-vscode-dev",
     // "dockerComposeFile": ["docker-compose.yml"],
     "service": "vscode",
-    "runServices": ["vscode"],
+    "runServices": [
+        "vscode"
+    ],
     "shutdownAction": "stopCompose",
     // "postCreateCommand": "~/start.sh",
-    "workspaceFolder": "/workspace",
+    // "workspaceFolder": "/workspace",
     // "overrideCommand": "",
     "extensions": [
         "ms-azuretools.vscode-docker",
